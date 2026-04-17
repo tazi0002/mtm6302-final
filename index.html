@@ -1,0 +1,559 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AI Business Idea Generator</title>
+  <link
+    href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+    rel="stylesheet"
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+    crossorigin="anonymous"
+  >
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="site-bg-glow glow-one"></div>
+  <div class="site-bg-glow glow-two"></div>
+
+  <main>
+    <section class="hero-section pt-4 pt-lg-5 pb-5">
+      <div class="container hero-container">
+        <div class="topbar glass-panel reveal-up">
+          <a href="#" class="brand-mark text-decoration-none">
+            <span class="brand-icon">AI</span>
+            <span>AI Business Idea Generator</span>
+          </a>
+          <nav class="topbar-nav d-none d-md-flex">
+            <a href="#ideaFormSection">Generator</a>
+            <a href="#resultsSection">Results</a>
+            <a href="#projectInfo">Overview</a>
+          </nav>
+          <a href="#ideaFormSection" class="btn btn-dark rounded-pill px-4">Start Building</a>
+        </div>
+
+        <div class="row align-items-center g-4 g-xl-5 mt-3">
+          <div class="col-lg-6">
+            <div class="hero-copy">
+              <div class="eyebrow-pill reveal-up">
+                <span>Practical, profile-based business ideas</span>
+              </div>
+              <h1 class="hero-title reveal-up">
+                Turn your skills, budget, and goals into
+                <span class="gradient-text">three business ideas worth exploring.</span>
+              </h1>
+              <p class="hero-subtitle reveal-up">
+                A clean single-page generator that transforms your background into realistic
+                business concepts, clear starting steps, and monetization paths.
+              </p>
+
+              <div class="hero-actions reveal-up">
+                <a href="#ideaFormSection" class="btn btn-primary btn-lg rounded-pill px-4 magnetic-btn">
+                  Generate Ideas
+                </a>
+                <a href="#projectInfo" class="btn btn-outline-dark btn-lg rounded-pill px-4">
+                  See What You Get
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-6">
+            <div class="hero-preview reveal-scale">
+              <div class="preview-window glass-panel floating-card">
+                <div class="preview-toolbar">
+                  <div class="preview-dots">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                  </div>
+                  <div class="preview-pill">Profile snapshot</div>
+                </div>
+
+                <div class="preview-profile">
+                  <div class="preview-avatar">AI</div>
+                  <div>
+                    <h2 class="h5 mb-1">Ready to generate</h2>
+                    <p class="mb-0 text-secondary">Balanced inputs lead to more realistic business suggestions.</p>
+                  </div>
+                </div>
+
+                <div class="preview-grid">
+                  <div class="mini-card">
+                    <span class="mini-card-label">Skills</span>
+                    <strong>Design + Marketing</strong>
+                  </div>
+                  <div class="mini-card">
+                    <span class="mini-card-label">Budget</span>
+                    <strong>$100-$500</strong>
+                  </div>
+                  <div class="mini-card">
+                    <span class="mini-card-label">Time</span>
+                    <strong>Evenings</strong>
+                  </div>
+                  <div class="mini-card accent-card">
+                    <span class="mini-card-label">Output</span>
+                    <strong>3 clear business ideas</strong>
+                  </div>
+                </div>
+
+                <div class="idea-preview-panel">
+                  <div class="idea-preview-header">
+                    <span>Generated structure</span>
+                    <span class="preview-badge">Focused</span>
+                  </div>
+                  <ul class="idea-preview-list">
+                    <li><span class="list-check">+</span><span>Concept summary and user fit</span></li>
+                    <li><span class="list-check">+</span><span>Market reasoning and monetization</span></li>
+                    <li><span class="list-check">+</span><span>3 to 5 actionable starting steps</span></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div id="projectInfo" class="feature-strip reveal-up">
+          <article class="feature-strip-card glass-panel">
+            <div class="feature-icon">01</div>
+            <div>
+              <h2>Tailored Inputs</h2>
+              <p>Mix skill level, budget, interests, customer type, and goals into one clear profile.</p>
+            </div>
+          </article>
+          <article class="feature-strip-card glass-panel">
+            <div class="feature-icon">02</div>
+            <div>
+              <h2>Structured Output</h2>
+              <p>Every result includes summary, fit, market logic, starting steps, revenue model, and difficulty.</p>
+            </div>
+          </article>
+          <article class="feature-strip-card glass-panel">
+            <div class="feature-icon">03</div>
+            <div>
+              <h2>Smooth Experience</h2>
+              <p>Responsive layout, clean interactions, subtle motion, and a polished loading state.</p>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="ideaFormSection" class="form-section pb-5">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-12">
+            <div class="form-shell">
+              <div class="row justify-content-center">
+                <div class="col-12">
+                  <div class="card border-0 shadow-sm app-card reveal-right">
+                    <div class="card-body p-4 p-lg-5">
+                      <div class="d-flex flex-column flex-xl-row justify-content-between align-items-xl-start gap-4 mb-4">
+                        <div class="form-heading-block">
+                          <span class="section-pill light-pill">Your Inputs</span>
+                          <h2 class="h3 mt-2 mb-1">Create your business profile</h2>
+                          <p class="text-secondary mb-0">
+                            Complete the fields below to generate exactly three business ideas.
+                          </p>
+                        </div>
+
+                        <div class="form-top-side">
+                          <div class="mode-note">
+                            <span class="badge text-bg-light border rounded-pill px-3 py-2">Mock mode runs when no Gemini key is added</span>
+                          </div>
+                        </div>
+                      </div>
+
+                      <div id="alertContainer" class="mb-4" aria-live="polite"></div>
+
+                      <form id="ideaForm" novalidate>
+                        <div class="row g-4">
+                          <div class="col-lg-6">
+                            <fieldset class="selection-group input-option-card" data-group="skillLevel" data-selection="single">
+                              <div class="option-card-head">
+                                <div>
+                                  <legend class="form-label fw-semibold mb-2">Skill Level</legend>
+                                  <p class="small text-secondary mb-3">Choose one skill level.</p>
+                                </div>
+                              </div>
+                              <div class="chip-grid">
+                                <input class="chip-check" type="radio" id="skillLevelBeginner" name="skillLevel" value="Beginner">
+                                <label class="chip-label" for="skillLevelBeginner">Beginner</label>
+
+                                <input class="chip-check" type="radio" id="skillLevelIntermediate" name="skillLevel" value="Intermediate">
+                                <label class="chip-label" for="skillLevelIntermediate">Intermediate</label>
+
+                                <input class="chip-check" type="radio" id="skillLevelAdvanced" name="skillLevel" value="Advanced">
+                                <label class="chip-label" for="skillLevelAdvanced">Advanced</label>
+                              </div>
+                              <div class="custom-option-builder" data-group-target="skillLevel">
+                                <button type="button" class="chip-action-btn custom-option-toggle">Add More +</button>
+                                <div class="custom-option-form d-none">
+                                  <input type="text" class="form-control custom-option-input" placeholder="Add another skill level option">
+                                  <button type="button" class="btn btn-primary custom-option-add-btn">Add</button>
+                                </div>
+                              </div>
+                              <div class="invalid-feedback d-block group-feedback" id="skillLevelFeedback"></div>
+                            </fieldset>
+                          </div>
+
+                          <div class="col-lg-6">
+                            <fieldset class="selection-group input-option-card" data-group="mainSkills" data-selection="multiple">
+                              <legend class="form-label fw-semibold mb-2">Main Skills</legend>
+                              <p class="small text-secondary mb-3">Select at least one skill.</p>
+                              <div class="chip-grid" id="mainSkillsGroup">
+                                <input class="chip-check" type="checkbox" id="skillDesign" name="mainSkills" value="Design">
+                                <label class="chip-label" for="skillDesign">Design</label>
+
+                                <input class="chip-check" type="checkbox" id="skillCoding" name="mainSkills" value="Coding">
+                                <label class="chip-label" for="skillCoding">Coding</label>
+
+                                <input class="chip-check" type="checkbox" id="skillWriting" name="mainSkills" value="Writing">
+                                <label class="chip-label" for="skillWriting">Writing</label>
+
+                                <input class="chip-check" type="checkbox" id="skillMarketing" name="mainSkills" value="Marketing">
+                                <label class="chip-label" for="skillMarketing">Marketing</label>
+
+                                <input class="chip-check" type="checkbox" id="skillSales" name="mainSkills" value="Sales">
+                                <label class="chip-label" for="skillSales">Sales</label>
+
+                                <input class="chip-check" type="checkbox" id="skillPhotography" name="mainSkills" value="Photography">
+                                <label class="chip-label" for="skillPhotography">Photography</label>
+
+                                <input class="chip-check" type="checkbox" id="skillResearch" name="mainSkills" value="Research">
+                                <label class="chip-label" for="skillResearch">Research</label>
+                              </div>
+                              <div class="custom-option-builder" data-group-target="mainSkills">
+                                <button type="button" class="chip-action-btn custom-option-toggle">Add More +</button>
+                                <div class="custom-option-form d-none">
+                                  <input type="text" class="form-control custom-option-input" placeholder="Add another skill option">
+                                  <button type="button" class="btn btn-primary custom-option-add-btn">Add</button>
+                                </div>
+                              </div>
+                              <div class="invalid-feedback d-block group-feedback" id="mainSkillsFeedback"></div>
+                            </fieldset>
+                          </div>
+
+                          <div class="col-lg-6">
+                            <fieldset class="selection-group input-option-card" data-group="budget" data-selection="single">
+                              <legend class="form-label fw-semibold mb-2">Budget</legend>
+                              <p class="small text-secondary mb-3">Choose one budget range.</p>
+                              <div class="chip-grid">
+                                <input class="chip-check" type="radio" id="budgetA" name="budget" value="$0-$100">
+                                <label class="chip-label" for="budgetA">$0-$100</label>
+
+                                <input class="chip-check" type="radio" id="budgetB" name="budget" value="$100-$500">
+                                <label class="chip-label" for="budgetB">$100-$500</label>
+
+                                <input class="chip-check" type="radio" id="budgetC" name="budget" value="$500-$2,000">
+                                <label class="chip-label" for="budgetC">$500-$2,000</label>
+
+                                <input class="chip-check" type="radio" id="budgetD" name="budget" value="$2,000+">
+                                <label class="chip-label" for="budgetD">$2,000+</label>
+                              </div>
+                              <div class="custom-option-builder" data-group-target="budget">
+                                <button type="button" class="chip-action-btn custom-option-toggle">Add More +</button>
+                                <div class="custom-option-form d-none">
+                                  <input type="text" class="form-control custom-option-input" placeholder="Add another budget option">
+                                  <button type="button" class="btn btn-primary custom-option-add-btn">Add</button>
+                                </div>
+                              </div>
+                              <div class="invalid-feedback d-block group-feedback" id="budgetFeedback"></div>
+                            </fieldset>
+                          </div>
+
+                          <div class="col-lg-6">
+                            <fieldset class="selection-group input-option-card" data-group="timeAvailable" data-selection="multiple">
+                              <legend class="form-label fw-semibold mb-2">Time Available</legend>
+                              <p class="small text-secondary mb-3">Choose one or more time options. Selecting Full-time clears the others.</p>
+                              <div class="chip-grid">
+                                <input class="chip-check" type="checkbox" id="timeWeekends" name="timeAvailable" value="Weekends">
+                                <label class="chip-label" for="timeWeekends">Weekends</label>
+
+                                <input class="chip-check" type="checkbox" id="timeEvenings" name="timeAvailable" value="Evenings">
+                                <label class="chip-label" for="timeEvenings">Evenings</label>
+
+                                <input class="chip-check" type="checkbox" id="timeFiveTen" name="timeAvailable" value="5-10 hrs/week">
+                                <label class="chip-label" for="timeFiveTen">5-10 hrs/week</label>
+
+                                <input class="chip-check" type="checkbox" id="timeTenTwenty" name="timeAvailable" value="10-20 hrs/week">
+                                <label class="chip-label" for="timeTenTwenty">10-20 hrs/week</label>
+
+                                <input class="chip-check" type="checkbox" id="timeFull" name="timeAvailable" value="Full-time">
+                                <label class="chip-label" for="timeFull">Full-time</label>
+                              </div>
+                              <div class="custom-option-builder" data-group-target="timeAvailable">
+                                <button type="button" class="chip-action-btn custom-option-toggle">Add More +</button>
+                                <div class="custom-option-form d-none">
+                                  <input type="text" class="form-control custom-option-input" placeholder="Add another time option">
+                                  <button type="button" class="btn btn-primary custom-option-add-btn">Add</button>
+                                </div>
+                              </div>
+                              <div class="invalid-feedback d-block group-feedback" id="timeAvailableFeedback"></div>
+                            </fieldset>
+                          </div>
+
+                          <div class="col-lg-6">
+                            <fieldset class="selection-group input-option-card" data-group="preferredBusinessType" data-selection="multiple">
+                              <legend class="form-label fw-semibold mb-2">Preferred Business Type</legend>
+                              <p class="small text-secondary mb-3">Select at least one business type.</p>
+                              <div class="chip-grid">
+                                <input class="chip-check" type="checkbox" id="typeService" name="preferredBusinessType" value="Service">
+                                <label class="chip-label" for="typeService">Service</label>
+
+                                <input class="chip-check" type="checkbox" id="typeDigitalProduct" name="preferredBusinessType" value="Digital Product">
+                                <label class="chip-label" for="typeDigitalProduct">Digital Product</label>
+
+                                <input class="chip-check" type="checkbox" id="typeLocalBusiness" name="preferredBusinessType" value="Local Business">
+                                <label class="chip-label" for="typeLocalBusiness">Local Business</label>
+
+                                <input class="chip-check" type="checkbox" id="typeOnlineTool" name="preferredBusinessType" value="Online Tool">
+                                <label class="chip-label" for="typeOnlineTool">Online Tool</label>
+
+                                <input class="chip-check" type="checkbox" id="typeContentBased" name="preferredBusinessType" value="Content-based">
+                                <label class="chip-label" for="typeContentBased">Content-based</label>
+                              </div>
+                              <div class="custom-option-builder" data-group-target="preferredBusinessType">
+                                <button type="button" class="chip-action-btn custom-option-toggle">Add More +</button>
+                                <div class="custom-option-form d-none">
+                                  <input type="text" class="form-control custom-option-input" placeholder="Add another business type">
+                                  <button type="button" class="btn btn-primary custom-option-add-btn">Add</button>
+                                </div>
+                              </div>
+                              <div class="invalid-feedback d-block group-feedback" id="preferredBusinessTypeFeedback"></div>
+                            </fieldset>
+                          </div>
+
+                          <div class="col-lg-6">
+                            <fieldset class="selection-group input-option-card" data-group="interests" data-selection="multiple">
+                              <legend class="form-label fw-semibold mb-2">Interests</legend>
+                              <p class="small text-secondary mb-3">Select at least one interest area.</p>
+                              <div class="chip-grid" id="interestsGroup">
+                                <input class="chip-check" type="checkbox" id="interestFitness" name="interests" value="Fitness">
+                                <label class="chip-label" for="interestFitness">Fitness</label>
+
+                                <input class="chip-check" type="checkbox" id="interestEducation" name="interests" value="Education">
+                                <label class="chip-label" for="interestEducation">Education</label>
+
+                                <input class="chip-check" type="checkbox" id="interestFood" name="interests" value="Food">
+                                <label class="chip-label" for="interestFood">Food</label>
+
+                                <input class="chip-check" type="checkbox" id="interestTech" name="interests" value="Tech">
+                                <label class="chip-label" for="interestTech">Tech</label>
+
+                                <input class="chip-check" type="checkbox" id="interestFashion" name="interests" value="Fashion">
+                                <label class="chip-label" for="interestFashion">Fashion</label>
+
+                                <input class="chip-check" type="checkbox" id="interestCreatorEconomy" name="interests" value="Creator Economy">
+                                <label class="chip-label" for="interestCreatorEconomy">Creator Economy</label>
+
+                                <input class="chip-check" type="checkbox" id="interestSmallBusiness" name="interests" value="Small Business">
+                                <label class="chip-label" for="interestSmallBusiness">Small Business</label>
+                              </div>
+                              <div class="custom-option-builder" data-group-target="interests">
+                                <button type="button" class="chip-action-btn custom-option-toggle">Add More +</button>
+                                <div class="custom-option-form d-none">
+                                  <input type="text" class="form-control custom-option-input" placeholder="Add another interest">
+                                  <button type="button" class="btn btn-primary custom-option-add-btn">Add</button>
+                                </div>
+                              </div>
+                              <div class="invalid-feedback d-block group-feedback" id="interestsFeedback"></div>
+                            </fieldset>
+                          </div>
+
+                          <div class="col-lg-6">
+                            <fieldset class="selection-group input-option-card" data-group="locationType" data-selection="multiple">
+                              <legend class="form-label fw-semibold mb-2">Location Type</legend>
+                              <p class="small text-secondary mb-3">Select one or more location types. Choosing Online only clears the others.</p>
+                              <div class="chip-grid">
+                                <input class="chip-check" type="checkbox" id="locationUrban" name="locationType" value="Urban">
+                                <label class="chip-label" for="locationUrban">Urban</label>
+
+                                <input class="chip-check" type="checkbox" id="locationSuburban" name="locationType" value="Suburban">
+                                <label class="chip-label" for="locationSuburban">Suburban</label>
+
+                                <input class="chip-check" type="checkbox" id="locationRural" name="locationType" value="Rural">
+                                <label class="chip-label" for="locationRural">Rural</label>
+
+                                <input class="chip-check" type="checkbox" id="locationOnlineOnly" name="locationType" value="Online only">
+                                <label class="chip-label" for="locationOnlineOnly">Online only</label>
+                              </div>
+                              <div class="custom-option-builder" data-group-target="locationType">
+                                <button type="button" class="chip-action-btn custom-option-toggle">Add More +</button>
+                                <div class="custom-option-form d-none">
+                                  <input type="text" class="form-control custom-option-input" placeholder="Add another location type">
+                                  <button type="button" class="btn btn-primary custom-option-add-btn">Add</button>
+                                </div>
+                              </div>
+                              <div class="invalid-feedback d-block group-feedback" id="locationTypeFeedback"></div>
+                            </fieldset>
+                          </div>
+
+                          <div class="col-lg-6">
+                            <fieldset class="selection-group input-option-card" data-group="targetCustomer" data-selection="single">
+                              <legend class="form-label fw-semibold mb-2">Target Customer</legend>
+                              <p class="small text-secondary mb-3">Choose one primary customer group.</p>
+                              <div class="chip-grid">
+                                <input class="chip-check" type="radio" id="customerStudents" name="targetCustomer" value="Students">
+                                <label class="chip-label" for="customerStudents">Students</label>
+
+                                <input class="chip-check" type="radio" id="customerParents" name="targetCustomer" value="Parents">
+                                <label class="chip-label" for="customerParents">Parents</label>
+
+                                <input class="chip-check" type="radio" id="customerSmallBusinesses" name="targetCustomer" value="Small Businesses">
+                                <label class="chip-label" for="customerSmallBusinesses">Small Businesses</label>
+
+                                <input class="chip-check" type="radio" id="customerCreators" name="targetCustomer" value="Creators">
+                                <label class="chip-label" for="customerCreators">Creators</label>
+
+                                <input class="chip-check" type="radio" id="customerProfessionals" name="targetCustomer" value="Professionals">
+                                <label class="chip-label" for="customerProfessionals">Professionals</label>
+
+                                <input class="chip-check" type="radio" id="customerResidents" name="targetCustomer" value="Local Residents">
+                                <label class="chip-label" for="customerResidents">Local Residents</label>
+                              </div>
+                              <div class="custom-option-builder" data-group-target="targetCustomer">
+                                <button type="button" class="chip-action-btn custom-option-toggle">Add More +</button>
+                                <div class="custom-option-form d-none">
+                                  <input type="text" class="form-control custom-option-input" placeholder="Add another customer type">
+                                  <button type="button" class="btn btn-primary custom-option-add-btn">Add</button>
+                                </div>
+                              </div>
+                              <div class="invalid-feedback d-block group-feedback" id="targetCustomerFeedback"></div>
+                            </fieldset>
+                          </div>
+
+                          <div class="col-lg-6">
+                            <fieldset class="selection-group input-option-card" data-group="goalStyle" data-selection="single">
+                              <legend class="form-label fw-semibold mb-2">Goal Style</legend>
+                              <p class="small text-secondary mb-3">Choose one goal style.</p>
+                              <div class="chip-grid">
+                                <input class="chip-check" type="radio" id="goalQuickIncome" name="goalStyle" value="Quick income">
+                                <label class="chip-label" for="goalQuickIncome">Quick income</label>
+
+                                <input class="chip-check" type="radio" id="goalBalanced" name="goalStyle" value="Balanced">
+                                <label class="chip-label" for="goalBalanced">Balanced</label>
+
+                                <input class="chip-check" type="radio" id="goalLongTerm" name="goalStyle" value="Long-term growth">
+                                <label class="chip-label" for="goalLongTerm">Long-term growth</label>
+                              </div>
+                              <div class="custom-option-builder" data-group-target="goalStyle">
+                                <button type="button" class="chip-action-btn custom-option-toggle">Add More +</button>
+                                <div class="custom-option-form d-none">
+                                  <input type="text" class="form-control custom-option-input" placeholder="Add another goal style">
+                                  <button type="button" class="btn btn-primary custom-option-add-btn">Add</button>
+                                </div>
+                              </div>
+                              <div class="invalid-feedback d-block group-feedback" id="goalStyleFeedback"></div>
+                            </fieldset>
+                          </div>
+
+                          <div class="col-lg-6">
+                            <fieldset class="selection-group input-option-card" data-group="problemToSolve" data-selection="multiple">
+                              <legend class="form-label fw-semibold mb-2">Problem to Solve <span class="text-secondary fw-normal">(Optional)</span></legend>
+                              <p class="small text-secondary mb-3">Choose zero or more problem areas.</p>
+                              <div class="chip-grid">
+                                <input class="chip-check" type="checkbox" id="problemSaveTime" name="problemToSolve" value="Save time">
+                                <label class="chip-label" for="problemSaveTime">Save time</label>
+
+                                <input class="chip-check" type="checkbox" id="problemSaveMoney" name="problemToSolve" value="Save money">
+                                <label class="chip-label" for="problemSaveMoney">Save money</label>
+
+                                <input class="chip-check" type="checkbox" id="problemReduceStress" name="problemToSolve" value="Reduce stress">
+                                <label class="chip-label" for="problemReduceStress">Reduce stress</label>
+
+                                <input class="chip-check" type="checkbox" id="problemGrowBusiness" name="problemToSolve" value="Help businesses grow">
+                                <label class="chip-label" for="problemGrowBusiness">Help businesses grow</label>
+
+                                <input class="chip-check" type="checkbox" id="problemConvenience" name="problemToSolve" value="Improve convenience">
+                                <label class="chip-label" for="problemConvenience">Improve convenience</label>
+                              </div>
+                              <div class="custom-option-builder" data-group-target="problemToSolve">
+                                <button type="button" class="chip-action-btn custom-option-toggle">Add More +</button>
+                                <div class="custom-option-form d-none">
+                                  <input type="text" class="form-control custom-option-input" placeholder="Add another problem area">
+                                  <button type="button" class="btn btn-primary custom-option-add-btn">Add</button>
+                                </div>
+                              </div>
+                            </fieldset>
+                          </div>
+                        </div>
+
+                        <div class="d-flex flex-column flex-md-row gap-3 mt-4 pt-2">
+                          <button type="submit" id="generateBtn" class="btn btn-primary btn-lg rounded-pill px-4 magnetic-btn">
+                            <span>Generate Ideas</span>
+                          </button>
+                          <button type="button" id="resetBtn" class="btn btn-outline-secondary btn-lg rounded-pill px-4">
+                            <span>Reset / Start Over</span>
+                          </button>
+                          <button type="button" id="regenerateBtn" class="btn btn-outline-primary btn-lg rounded-pill px-4 d-none">
+                            <span>Regenerate</span>
+                          </button>
+                        </div>
+                      </form>
+
+                      <section id="loadingSection" class="loading-panel elegant-loader text-center py-5 d-none" aria-live="polite">
+                        <div class="loader-orb-wrap mb-3">
+                          <span class="loader-orb"></span>
+                          <span class="loader-orb"></span>
+                          <span class="loader-orb"></span>
+                        </div>
+                        <h3 class="h5 mb-2">Generating your ideas...</h3>
+                        <p class="text-secondary mb-0">Please wait while the app builds three realistic business ideas.</p>
+                      </section>
+
+                      <section id="resultsSection" class="results-section mt-5 d-none" aria-live="polite">
+                        <div class="results-header dark-panel">
+                          <div class="d-flex flex-column flex-lg-row justify-content-between align-items-lg-center gap-2">
+                            <div>
+                              <span class="section-pill">Results</span>
+                              <h2 class="h3 text-white mt-2 mb-1">Your 3 business ideas</h2>
+                              <p class="text-white-50 mb-0">Each result is shaped around the profile you submitted.</p>
+                            </div>
+                            <span id="resultsModeBadge" class="badge rounded-pill results-mode-badge"></span>
+                          </div>
+                        </div>
+                        <div id="resultsGrid" class="row g-4 mt-1"></div>
+                      </section>
+
+                      <section id="favoritesSection" class="favorites-section mt-5 d-none" aria-live="polite">
+                        <div class="results-header favorites-header">
+                          <div class="d-flex flex-column flex-lg-row justify-content-between align-items-lg-center gap-2">
+                            <div>
+                              <span class="section-pill light-pill">Favorites</span>
+                              <h2 class="h3 mt-2 mb-1">Favorite ideas</h2>
+                              <p class="text-secondary mb-0">Ideas you marked to keep and compare later.</p>
+                            </div>
+                            <span id="favoritesCountBadge" class="badge rounded-pill text-bg-light border px-3 py-2">0 saved</span>
+                          </div>
+                        </div>
+                        <div id="favoritesGrid" class="row g-4 mt-1"></div>
+                      </section>
+
+                      <section id="emptyState" class="empty-state mt-5 text-center">
+                        <div class="empty-state-panel reveal-up">
+                          <h2 class="h4 mb-2">Ready for your first idea set?</h2>
+                          <p class="text-secondary mb-0">
+                            Complete the form and the app will generate three practical business ideas for your profile.
+                          </p>
+                        </div>
+                      </section>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <script
+    src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+    crossorigin="anonymous"
+  ></script>
+  <script src="script.js"></script>
+</body>
+</html>
